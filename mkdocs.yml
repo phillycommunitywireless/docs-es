@@ -3,6 +3,7 @@ site_url: https://docs.phillycommunitywireless.org
 
 theme:
   name: material
+  language: es
   logo: assets/icons/logo.svg
   favicon: assets/icons/favicon/favicon.ico
   features:
