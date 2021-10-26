@@ -1,10 +1,13 @@
-# Collaboration Tools
+---
 
-Philly Community Wireless strives to use open-source software when possible.
+---
+# Herramientas de colaboración
 
-New members joining the team, depending on role, will be given access to the collaboration tools we use.
+Philly Community Wireless se esfuerza por utilizar software de código abierto cuando sea posible.
 
-## Communication Platforms
+Los nuevos miembros que se unan al equipo, dependiendo del rol, tendrán acceso a las herramientas de colaboración que utilizamos.
+
+## Plataformas de comunicación
 
 1. [Shared Google Drive](https://drive.google.com)
 2. [Element Space](https://matrix.to/#/!GheBCBVgQRtMQLRuNp:matrix.org?via=matrix.org)
@@ -19,12 +22,12 @@ New members joining the team, depending on role, will be given access to the col
 2. Philly Community Wireless Steering Committee Google Group
 3. Phillycommunitywireless@gmail.com email
 
-## Wifi Tools
+## Herramientas Wifi
 
 1. [Hostifi](https://hostifi.com/)
 2. [Wifiman](http://wifiman.com/)
 
 ## GIS Software
 
-4. [Google Earth](https://earth.google.com/web/)
-5. [what3words](https://what3words.com/clip.apples.leap)
+1. [Google Earth](https://earth.google.com/web/)
+2. [what3words](https://what3words.com/clip.apples.leap)
