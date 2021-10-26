@@ -1,42 +1,43 @@
-# Configure ERX Router
+---
 
-This guide will walk you through configuring a Ubiquiti EdgeRouter X.
+---
+# Configurar ERX Router
 
-## Required Hardware
-- [ERX Router](https://store.ui.com/collections/operator-edgemax-routers/products/edgerouter-x) and power cable
-- Ethernet cable
-- Computer
-- USB Ethernet adapter (if computer doesn't have ethernet port)
+Esta guía le guiará a través de la configuración de un Ubiquiti EdgeRouter X.
+
+## Hardware requerido
+
+* Router e cable de alimentación
+* Tranque cable
+* Computador
+* Adaptador Ethernet USB (si la computadora no tiene puerto Ethernet)
 
 ![Hardware](../assets/images/erx/hardware.jpg)
 
-## Setup Steps
+## Pasos de instalación
 
-### Set static IP on computer
+### Establecer IP estática en el equipo
 
-See [./static-ip](./static-ip.md)
+Ver [./static-ip](./static-ip.md)
 
-### Wire up ERX
+### Conecte el ERX
 
-1. Plug the ERX into its power cable, and plug the power cable into an outlet.
-2. Connect the `eth0` port of the ERX to your computer with an Ethernet cable, using the USB Ethernet adapter if you don't have an Ethernet port.
+1. Conecte el ERX a su cable de alimentación y conecte el cable de alimentación a una toma de corriente.
+2. Conecte el puerto `eth0` del ERX al ordenador con un cable Ethernet, utilizando el adaptador Ethernet USB si no dispone de un puerto Ethernet.
 
 ![Ports](../assets/images/erx/wiring.jpeg)
 ![Ports](../assets/images/erx/eth0.jpeg)
 
-### Configure ERX
+### Configurar ERX
 
-1. Download the [ERX config file](../assets/configs/erx-config.tar.gz)
-2. Navigate to the portal at [https://192.168.1.1](https://192.168.1.1) in your browser
-3. Log into the portal with username `ubnt`, password `ubnt`.
-![Login](../assets/images/erx/login.jpeg)
-
-4. On the `Use wizard?` prompt, press no.
-![Login](../assets/images/erx/wizard.jpeg)
-
-5. Press the `System` tab on the bottom of the page.
-6. Under the `Restore Config` section, press `Upload a file` and select the ERX config file you downloaded.
-![Login](../assets/images/erx/system.jpeg)
-
-7. The ERX will reboot using the new configuration.
-8. That's it! If you need to do more configuration, you can log back into the portal using the username `pcwadmin`, and a password that you can get from the project maintainers.
+1. Descargue el [ERX config file](../assets/configs/erx-config.tar.gz)
+2. Navegue al portal en [https://192.168.1.1](https://192.168.1.1) en su navegador.
+3. Regístrese sesión en el portal con nombre de usuario `ubnt`, contraseña `ubnt`.
+   ![Login](../assets/images/erx/login.jpeg)
+4. En el `Use wizard?` , presione no.
+   ![Login](../assets/images/erx/wizard.jpeg)
+5. Presione la pestaña `System` en la parte inferior de la página.
+6. En la sección `Restore Config` , presione `Upload a file` y seleccione el archivo de configuración de ERX que descargó.
+   ![Login](../assets/images/erx/system.jpeg)
+7. El ERX se reiniciará utilizando la nueva configuración.
+8. ¡Eso es todo! Si necesita realizar más configuración, puede volver a iniciar sesión en el portal utilizando el nombre de usuario `pcwadmin`, y una contraseña que puede obtener de los mantenedores del proyecto.
