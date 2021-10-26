@@ -1,49 +1,52 @@
-# Documentación
+---
+
+---
+# **Documentación técnica**
 
 <span style="color:red">**_La versión en español de este sitio está en desarrollo._**</span>
 
 **_The Spanish version of this site is in development._**
 
-## The PCW Project
+## El proyecto PCW
 
-**Philly Community Wireless** (PCW) is a working group of organizers, technologists, academics, public school teachers, and City Hall staffers in Philadelphia. During a time of social distancing and online teaching, roughly half of the city’s public school students lack a wifi connection at home. In certain neighborhoods, even more residents lack any connection to the Internet. We seek to address the city's digital divide with **community-owned and -operated mesh network technologies.**
+**Philly Community Wireless** (PCW) es un proyecto para desarrollar redes de malla de propiedad comunitaria en North Philly. Somos un grupo de trabajo de organizadores, tecnólogos, académicos, maestros de escuelas públicas y personal del Ayuntamiento de Filadelfia. Durante una época de distanciamiento social y enseñanza en línea, aproximadamente la mitad de los estudiantes de las escuelas públicas de la ciudad carecen de conexión wifi en casa. En ciertos vecindarios, aún más residentes carecen de conexión a Internet. In certain neighborhoods, even more residents lack any connection to the Internet. Buscamos abordar la brecha digital de **la ciudad con tecnologías de red de malla operadas y propiedad de la comunidad.**
 
-Mesh networks allow a single Internet connection to be shared among a broader group of users with very little cost or infrastructure required. With the help of **PhillyWisper**, a pro-net neutrality, wireless internet service provider, we are working toward installing two pilot sites in **Kensington** and **Fairhill**. From there, we will plan participatory design workshops and technical training for the community that will empower them to maintain and grow this free network connection.
+Las redes de malla permiten compartir una única conexión a Internet entre un grupo más amplio de usuarios con muy poco coste o infraestructura necesaria. Con la ayuda de **PhillyWisper**, un proveedor de servicios de Internet inalámbrico, pro-neutral, estamos trabajando para instalar dos sitios piloto en **Kensington y Fairhill**. A partir de ahí, planearemos talleres de diseño participativo y capacitación técnica para la comunidad que los capacitará para mantener y hacer crecer esta conexión de red gratuita.
 
-## The PCW Docs
+## Los documentos de PCW
 
-This docs page provides in-development technical information and guides for replicating the project's configuration and distribution of routers and antennas for building a mesh network.
+Esta página de documentos proporciona información técnica en desarrollo y guías para replicar la configuración y distribución del proyecto de routers y antenas para construir una red de malla.
 
-If you are looking for a **non-technical overview** of the project, or are interested in signing up for PCW coverage, please visit our [homepage](https://phillycommunitywireless.org).
+Si está buscando una **descripción no técnica del proyecto** o está interesado en suscribirse a la cobertura de PCW, visite nuestra [homepage](https://phillycommunitywireless.org).
 
-### [Scholarly Resources](https://docs.phillycommunitywireless.org/en/latest/resources/)
+### [Recursos Académicos]()
 
-This page overviews secondary resources on the problems of broadband access and digital inequity in urban cities like Philadelphia.
+Esta página describe recursos secundarios sobre los problemas del acceso de banda ancha y la inequidad digital en ciudades urbanas como Philadelphia.
 
-### [Collaboration Tools](https://docs.phillycommunitywireless.org/en/latest/tools/)
+### [Herramientas de colaboración]()
 
-The Collaboration Tools page overviews the software used by the PCW team.
+La página Herramientas de colaboración describe el software utilizado por el equipo de PCW.
 
-### [Required Hardware](https://docs.phillycommunitywireless.org/en/latest/hardware/)
+### [Hardware requerido]()
 
-Overviews the hardware necessary for the PCW project's infrastructure.
+Visión general del hardware necesario para la infraestructura del proyecto PCW.
 
-### [Antenna Installations](https://docs.phillycommunitywireless.org/en/latest/rooftop%20installation/)
+### [Instalaciones de antenas]()
 
-This guide overviews the process for installing rooftop antennas as the foundation for the wireless mesh network and free public wifi.
+Esta guía describe el proceso de instalación de antenas en la azotea como base para la red de malla inalámbrica y el wifi público gratuito.
 
-### [Configure ERX routers](https://docs.phillycommunitywireless.org/en/latest/configure-erx/)
+### [Configurar enrutadores ERX]()
 
-The Configure ERX Routers page explains the stage of setting up the router hosts of rooftop installations.
+La página Configurar enrutadores ERX explica la fase de configuración de los hosts de enrutador de las instalaciones en tejados.
 
-### [Static IP](https://docs.phillycommunitywireless.org/en/latest/static-ip/)
+### [IP estática]()
 
-This guide overviews how to set up your computer with a static IP, so you can configure the router and mesh-kit.
+Esta guía describe cómo configurar el ordenador con una IP estática, de modo que pueda configurar el router y el kit de malla.
 
-### [Configure AP-Mesh](https://docs.phillycommunitywireless.org/en/latest/configure-ap-mesh/)
+### [Configurar AP-Mesh]()
 
-This guide overviews the set-up of a mesh kit that can be installed in any home in close proximity (half a neighborhood block) to a rooftop antenna host.
+Esta guía describe la configuración de un kit de malla que se puede instalar en cualquier hogar muy cerca (medio bloque de vecindario) de un host de antena en la azotea.
 
-### Editing the Docs
+### Edición de los documentos
 
-If you'd like to contribute to PCW's docs, please see our guidelines.
+Si desea contribuir a los documentos de PCW, consulte nuestras directrices.
