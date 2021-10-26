@@ -1,75 +1,75 @@
-# Configure AP Mesh
+---
 
-This guide will walk you through configuring a Ubiquiti Access Point Mesh so it can be adopted by the PCW network.
+---
+# Configurar AP Mesh
 
-## Required Hardware
+Esta guía lo guiará a través de la configuración de una malla de punto de acceso Ubiquiti para que pueda ser adoptada por la red PCW.
 
-- AP Mesh Unit - [Ubiquiti Mesh Dual-Band Access Point](https://store.ui.com/products/unifi-ac-mesh-ap) (white Ubiquiti antenna with bunny ears)
-- PoE injector
-- Ethernet cable
-- Computer
-- USB Ethernet adapter (if computer doesn't have ethernet port)
-- Power strip/extension cord
-- Paperclip
+## Hardware requerido
+
+* Unidad de malla AP: [Ubiquiti Mesh Dual-Band Access Point](https://store.ui.com/products/unifi-ac-mesh-ap) (antena Ubiquiti blanca con orejas de conejo)
+* Inyector PoE
+* Cable Ethernet
+* Ordenador
+* Adaptador Ethernet USB (si el ordenador no tiene puerto ethernet)
+* Cable de regleta/alargador
+* Paperclip
 
 ![Materials](assets/images/mesh/Materials.jpeg)
 
-## Setup Steps
+## Pasos de instalación
 
-### Set static IP on computer
+### Establecer IP estática en el equipo
 
-See [./static-ip](./static-ip.md)
+Ver [./static-ip](./static-ip.md)
 
-### Wire up your AP Mesh Unit.
+### Conecte la unidad de malla AP.
 
-1. Plug the PoE injector into an outlet, or power strip.
-2. Connect the `POE` port of the injector to the AP Mesh Unit with an ethernet cable.
-3. Connect the `LAN` port of the injector to your computer, using the USB Ethernet adapter if you don't have an Ethernet port.
+1. Conecte el inyector PoE a una toma de corriente o a una regleta.
+2. Conecte el puerto `POE` del inyector a la unidad de malla AP con un cable ethernet.
+3. Conecte el puerto `LAN` del inyector al ordenador, utilizando el adaptador Ethernet USB si no dispone de un puerto Ethernet.
    ![Ports](../assets/images/mesh/Ports.jpeg)
    ![Wiring](../assets/images/mesh/Wiring.jpeg)
 
-### Factory reset AP Mesh Unit.
+### Restablecimiento de fábrica de la unidad de malla AP.
 
-The AP Mesh Units have had unexpected behavior even out of the box, so it is recommended to factory reset it before continuing.
+Las unidades de malla AP han tenido un comportamiento inesperado incluso fuera de la caja, por lo que se recomienda reiniciarlas de fábrica antes de continuar.
 
-1. With the paperclip, press the reset button at the bottom of the AP Mesh Unit in until it clicks. ![Reset Button](../../assets/images/mesh/Reset.jpeg)
-2. Hold it pressed in for 15 seconds.
-3. Once the status light on the AP Mesh Unit has flashed and then gone out, the device has been reset.
+1. Con el clip, pulse el botón de restablecimiento situado en la parte inferior de la unidad de malla AP hasta que haga clic.![Reset Button](../../assets/images/mesh/Reset.jpeg)
+2. Mantenga pulsado durante 15 segundos.
+3. Una vez que la luz de estado de la unidad de malla AP ha destellado y se ha apagado, el dispositivo se ha restablecido.
 
-### Connect to the AP Mesh Unit.
+### Conecte a la unidad de malla AP.
 
-1. Open a command line prompt.
-2. If you have previously connected to an AP Mesh Unit, you will need to edit your `known_hosts` file, or you will get an `Host key verification failed` error.
-   1. Open `~/.ssh/known_hosts` with `vim`, `nano`, or the text editor of your choice.
-   2. Remove the line beginning with `192.168.1.20` (It will look something like `192.168.1.20 ssh-rsa AAAAB3NzaC1yc2E...`), and save the file.
-3. Run the command `ssh ubnt@192.168.1.20`
-4. You may see the alert:
+1. Abra un símbolo del sistema
+2. Si se ha conectado previamente a una unidad de malla de AP, tendrá que editar el archivo de `known_hosts` , o obtendrá un error de`Host key verification failed` error.
+   1. Abra `~/.ssh/known_hosts` con `vim`, `nano`, o el editor de texto que desee.
+   2. Elimine la línea que comienza por `192.168.1.20` (tendrá un aspecto similar a `192.168.1.20 ssh-rsa AAAAB3NzaC1yc2E...`), y guarde el archivo.
+3. Ejecute el comando `ssh ubnt@192.168.1.20`
+4. Puede ver la alerta:
 
-   ```
-   The authenticity of host '192.168.1.20 (192.168.1.20)' can't be established.
-   RSA key fingerprint is SHA256:oUG6ABM3uor6lfBpJFcnHWyhhPnCrIx2Jf0U1+UAg4g.
-   Are you sure you want to continue connecting (yes/no/[fingerprint])?
-   ```
+       The authenticity of host '192.168.1.20 (192.168.1.20)' can't be established.
+       RSA key fingerprint is SHA256:oUG6ABM3uor6lfBpJFcnHWyhhPnCrIx2Jf0U1+UAg4g.
+       Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
-   Press yes to continue.
-
-5. When prompted for the password, enter `ubnt`.
-6. You should now be connected to the AP Mesh Unit.
+   Presione sí para continuar.
+5. Cuando se le solicite la contraseña, escriba `ubnt`.
+6. Ahora debe estar conectado a la unidad de malla AP.
    ![SSH Connection](../../assets/images/mesh/SSH.png)
 
-### Adopt AP Mesh Unit
+### Adopte AP Mesh Unit
 
-You will need access to the Philly Community Wireless HostiFi portal to complete this step.
+Necesitará acceso al portal Philly Community Wireless HostiFi para completar este paso.
 
-1. From your `ssh` shell, run the command `set-inform http://unifi.phillycommunitywireless.org:8080/inform`.
-   - This will alert the HostiFi controller that the AP Mesh Unit wants to be adopted.
-2. Open the HostiFi portal in your browser, and navigate to the device list.
-3. The AP Mesh Unit should appear in the list of devices awaiting adoption.
-4. Press `Adopt` to adopt the AP Mesh Unit.
+1. De su `ssh` , ejecute el comando `set-inform http://unifi.phillycommunitywireless.org:8080/inform`.
+   * Esto alertará al controlador HostiFi de que la unidad de malla AP desea ser adoptada.
+2. Abra el portal HostiFi en el explorador y desplácese a la lista de dispositivos.
+3. La unidad de malla AP debe aparecer en la lista de dispositivos en espera de adopción.
+4. Pulse `Adopt` para adoptar la unidad de malla AP.
 
-## Troubleshooting
+## Solución de problemas
 
-1. Computer doesn't recognize AP Mesh Unit in Network settings, or `ssh` command fails.
-   - The AP Mesh Unit can take a few minutes to boot after being plugged in, so wait until the status light is solid white and try again.
-2. What does this status light pattern mean?
-   - [LED Color Patterns for UniFi Devices](https://help.ui.com/hc/en-us/articles/204910134-UniFi-LED-Color-Patterns-for-UniFi-Devices)
+1. Computadora no reconoce la unidad de malla AP en la configuración de red o el comando`ssh` falla.
+   * La unidad de malla AP puede tardar unos minutos en iniciarse después de enchufarla, por lo que espere hasta que la luz de estado se ilumine en blanco y vuelva a intentarlo.
+2. ¿Qué significa este patrón de luces de estado?
+   * [LED Color Patterns for UniFi Devices](https://help.ui.com/hc/en-us/articles/204910134-UniFi-LED-Color-Patterns-for-UniFi-Devices)
