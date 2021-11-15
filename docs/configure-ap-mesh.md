@@ -61,7 +61,7 @@ Las unidades de malla AP han tenido un comportamiento inesperado incluso fuera d
 
 Necesitará acceso al portal Philly Community Wireless HostiFi para completar este paso.
 
-1. De su `ssh` , ejecute el comando `set-inform http://unifi.phillycommunitywireless.org:8080/inform`.
+1. De su `ssh` , ejecute el comando `set-inform http://hostifi.phillycommunitywireless.org:8080/inform`.
    * Esto alertará al controlador HostiFi de que la unidad de malla AP desea ser adoptada.
 2. Abra el portal HostiFi en el explorador y desplácese a la lista de dispositivos.
 3. La unidad de malla AP debe aparecer en la lista de dispositivos en espera de adopción.
