@@ -15,7 +15,7 @@ theme:
     # Light mode
     - scheme: default
       media: "(prefers-color-scheme: light)"
-      primary: blue grey
+      primary: indigo
       accent: deep orange
       toggle:
         icon: material/weather-night
@@ -24,7 +24,7 @@ theme:
     - scheme: slate
       media: "(prefers-color-scheme: dark)"
       primary: black
-      accent: amber
+      accent: deep purple
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
