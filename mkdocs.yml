@@ -41,6 +41,9 @@ extra:
       lang: es
 
 markdown_extensions:
+  - meta
+  - tables
+  - admonition
   - pymdownx.highlight
   - pymdownx.superfences
   - meta
