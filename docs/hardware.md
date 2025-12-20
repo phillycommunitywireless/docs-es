@@ -1,4 +1,5 @@
 ---
+Title: Hardware
 
 ---
 # Hardware requerido
