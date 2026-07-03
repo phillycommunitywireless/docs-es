@@ -1,3 +1,5 @@
+# The content of this repository has been merged into the main docs repository - please see https://github.com/phillycommunitywireless/docs 
+
 
 # Edición de los documentos
 
